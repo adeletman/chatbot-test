@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantrac Distribution Chat Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #004b87;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        .chat-container {
+            margin-top: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .test-message {
+            padding: 10px;
+            background-color: #00bcd4;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Mantrac Distribution - Chat Test</h1>
+    <p>We are testing our new chat feature. Feel free to interact with the agent!</p>
+</header>
+
+<div class="container">
+    <div class="test-message">
+        <strong>Test Mode:</strong> Chat functionality is now live on this test page.
+    </div>
+    <h2>What is Mantrac Distribution?</h2>
+    <p>Mantrac Distribution is a leading IT distributor in Egypt, offering top-branded products and solutions. The company is a subsidiary of the Mansour Group, and works with major brands like Dell, Lenovo, and Fortinet to provide comprehensive IT solutions.</p>
+    
+    <h3>How can we assist you?</h3>
+    <p>Our chatbot is designed to help you with product inquiries, services, and more. Just click on the chat icon to start!</p>
+</div>
+
+<!-- Chatbot Integration -->
+<div class="chat-container">
+    <script
+        type="module"
+        src="https://agent.d-id.com/v1/index.js"
+        data-name="did-agent"
+        data-mode="fabio"
+        data-client-key="YXV0aDB8NjY5Y2MxMTI5NzgyMmJkNjNkYjJjZDRhOkcxMWczei1WTlhlYnhhbEZQQ0N5TQ=="
+        data-agent-id="agt_5IcQ8ndx"
+        data-monitor="true">
+    </script>
+</div>
+
+</body>
+</html>
